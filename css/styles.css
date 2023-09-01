@@ -110,6 +110,7 @@ nav .logo {
 }
 
 .nav-item {
+	position: relative;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
@@ -117,10 +118,10 @@ nav .logo {
 	position: relative;
 	color: #404bbf;
 	transition-property: color;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.current-page::after {
+.main-nav .current-page::after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -163,7 +164,7 @@ address ul li a {
 	padding-top: 24px;
 	padding-bottom: 24px;
 	transition-property: color;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Address on hover */
@@ -176,12 +177,13 @@ address ul li a:focus {
 /* Hero section */
 
 .solutions {
-	max-width: 1440рх;
 	background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/hero/people-office.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #2E2F42;
 	background-size: cover;
+	max-width: 1440px;
+	margin: 0 auto;
 	padding: 188px 0;
 }
 
@@ -370,7 +372,7 @@ address ul li a:focus {
 	background-color: #4D5AE5;
 	border-radius: 50%;
 	transition-property: background-color;
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-icon {
